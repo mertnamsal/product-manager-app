@@ -1,0 +1,28 @@
+<!--
+  ~ Hibernate, Relational Persistence for Idiomatic Java
+  ~
+  ~ License: GNU Lesser General Public License (LGPL), version 2.1 or later.
+  ~ See the lgpl.txt file in the root directory or <http://www.gnu.org/licenses/lgpl-2.1.html>.
+  -->
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property> <!-- DB Dialect -->
+   		<property name="connection.url">jdbc:postgresql://localhost/productmanagerdb</property> <!-- BD Mane -->
+   		<property name="connection.username">postgres</property> <!-- DB User -->
+   		<property name="connection.password">21wvtmykx</property> <!-- DB Password -->
+   		<property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+   		<property name="hibernate.show_sql">true</property> <!-- Show SQL in console -->
+		<property name="hibernate.format_sql">true</property> <!-- Show SQL formatted -->
+		
+		<property name="connection.autocommit">false</property>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="hibernate.enable_lazy_load_no_trans">true</property>
+		<property name="hibernate.event.merge.entity_copy_observer">allow</property>
+		<!--mapping class="domain.User"></mapping>  -->
+		
+	</session-factory>
+</hibernate-configuration>
