@@ -221,31 +221,36 @@ public class CustomerManager extends JFrame {
 								Customer customer = customerService.findByEmail(email);
 								
 								if(rdbtn1.isSelected()) {
-									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),Double.parseDouble(rdbtn1.getText()),product, customer);
+									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),
+											Double.parseDouble(rdbtn1.getText()),product, customer);
 									productEvaluateService.save(productEvaluate);
 									List<ProductEvaluate> list = productEvaluateService.listAll();
 									fillCommentTable(list);
 								}
 								if(rdbtn2.isSelected()) {
-									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),Double.parseDouble(rdbtn2.getText()),product, customer);
+									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),
+											Double.parseDouble(rdbtn2.getText()),product, customer);
 									productEvaluateService.save(productEvaluate);
 									List<ProductEvaluate> list = productEvaluateService.listAll();
 									fillCommentTable(list);
 								}
 								if(rdbtn3.isSelected()) {
-									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),Double.parseDouble(rdbtn3.getText()),product, customer);
+									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),
+											Double.parseDouble(rdbtn3.getText()),product, customer);
 									productEvaluateService.save(productEvaluate);
 									List<ProductEvaluate> list = productEvaluateService.listAll();
 									fillCommentTable(list);
 								}
 								if(rdbtn4.isSelected()) {
-									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),Double.parseDouble(rdbtn4.getText()),product, customer);
+									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),
+											Double.parseDouble(rdbtn4.getText()),product, customer);
 									productEvaluateService.save(productEvaluate);
 									List<ProductEvaluate> list = productEvaluateService.listAll();
 									fillCommentTable(list);
 								}
 								if(rdbtn5.isSelected()) {
-									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),Double.parseDouble(rdbtn5.getText()),product, customer);
+									ProductEvaluate productEvaluate = new ProductEvaluate(tfComment.getText(),
+											Double.parseDouble(rdbtn5.getText()),product, customer);
 									productEvaluateService.save(productEvaluate);
 									List<ProductEvaluate> list = productEvaluateService.listAll();
 									fillCommentTable(list);
